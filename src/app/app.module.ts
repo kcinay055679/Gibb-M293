@@ -13,6 +13,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { ArchivComponent } from './archiv/archiv.component';
 import { EventsComponent } from './events/events.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EventsComponent } from './events/events.component';
     LandingComponent,
     SideNavComponent,
     ArchivComponent,
-    EventsComponent
+    EventsComponent,
+    FooterComponent
   ],
     imports: [
         BrowserModule,
