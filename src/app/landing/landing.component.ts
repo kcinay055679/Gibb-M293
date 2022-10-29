@@ -9,7 +9,11 @@ import {Player} from "../models/player";
 export class LandingComponent implements OnInit {
 
   constructor() { }
-  players:Player[] = [{name:"Magnus Carlsen", imagePath:""}]
+  players:Player[] = [
+    {name:"Magnus Carlsen", imagePath:"../../assets/magnus_carlsen.png"},
+    {name:"Magnus Carlsen", imagePath:"../../assets/magnus_carlsen.png"},
+    {name:"Magnus Carlsen", imagePath:"../../assets/magnus_carlsen.png"}
+  ]
   ngOnInit(): void {
   }
 

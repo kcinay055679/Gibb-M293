@@ -1,7 +1,12 @@
 #view {
-  background-image: url(../assets/background.png);
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
+  min-height:93.1vh;
+  background-image:url(../assets/background.png);
+  background-size:cover;
+  background-position:center;
 }
+
+
+
+
 
