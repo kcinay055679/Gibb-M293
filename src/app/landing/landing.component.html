@@ -2,8 +2,8 @@
   <p class="display-6 fw-bold" id="headline">Worlds best chessplayers</p>
   <div class="d-flex flex-row justify-content-between w-75 flex-wrap">
     <div *ngFor="let player of this.players" class="d-flex align-items-center flex-column">
-      <img src="{{player.imagePath}}" alt="" [width]="450">
-      <p class="display-6 fw-bold player-name">{{player.name}}</p>
+      <img src="{{player.imagePath}}" alt="" [width]="300">
+      <p class="h2 fw-bold player-name">{{player.name}}</p>
     </div>
   </div>
 </div>

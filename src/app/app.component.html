@@ -1,6 +1,10 @@
-<app-nav></app-nav>
-<div id="view">
-  <router-outlet>
-  </router-outlet>
-</div>
+<app-nav (sidenav) ="drawer.toggle()"></app-nav >
+<mat-drawer-container hasBackdrop="true">
+<app-side-nav #drawer></app-side-nav>
+  <div id="view">
+    <router-outlet>
+    </router-outlet>
+  </div>
+</mat-drawer-container>
+
 

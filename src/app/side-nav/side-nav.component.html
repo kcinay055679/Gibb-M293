@@ -1,0 +1,7 @@
+<mat-drawer #drawer mode="over" id="sidenav-parent" class="d-flex justify-content-center">
+  <div class="d-flex flex-column align-items-center" >
+    <button mat-raised-button color="accent" class="nav-button my-2 px-5" (click)="drawer.toggle()" [routerLink]="navElement.path" *ngFor="let navElement of this._navigationService.navElements">
+      {{navElement.text}}
+    </button>
+  </div>
+</mat-drawer>
