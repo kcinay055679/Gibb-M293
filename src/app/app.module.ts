@@ -14,6 +14,11 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { ArchivComponent } from './archiv/archiv.component';
 import { EventsComponent } from './events/events.component';
 import { FooterComponent } from './footer/footer.component';
+import {MatCardModule} from "@angular/material/card";
+import { AddEventComponent } from './add-event/add-event.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -23,17 +28,23 @@ import { FooterComponent } from './footer/footer.component';
     SideNavComponent,
     ArchivComponent,
     EventsComponent,
-    FooterComponent
+    FooterComponent,
+    AddEventComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatButtonModule,
-        MatIconModule,
-        MatToolbarModule,
-        MatSidenavModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

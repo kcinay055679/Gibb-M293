@@ -1,0 +1,20 @@
+<form [formGroup]="eventForm" (ngSubmit)="submit()" class="d-flex flex-column">
+  <mat-form-field appearance="fill">
+    <mat-label>Eventname</mat-label>
+    <input type="text" matInput formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Location:</mat-label>
+    <input type="text" matInput formControlName="location">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Description:</mat-label>
+    <input type="text" matInput formControlName="description">
+  </mat-form-field>
+
+  <button mat-raised-button color="accent" type="submit" [disabled]="eventForm.invalid">Create new event</button>
+  <mat-error *ngIf="eventForm.invalid">
+   Cannot create event with the given data
+  </mat-error>
+</form>
