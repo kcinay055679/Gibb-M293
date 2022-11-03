@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {ChessEvent} from "../models/ChessEvent";
+import {Component, OnInit} from '@angular/core';
+import {CardContent} from "../models/CardContent";
 import {MatDialog} from "@angular/material/dialog";
 import {AddEventComponent} from "../add-event/add-event.component";
-
 
 
 @Component({
@@ -12,13 +11,35 @@ import {AddEventComponent} from "../add-event/add-event.component";
 })
 export class EventsComponent implements OnInit {
 
-  events:ChessEvent[] = [
-    {name:"World championship", location:"America", description:"Just a description", image:"../../assets/event_background.png"},
-    {name:"World championship", location:"America", description:"Just a description", image:"../../assets/event_background.png"},
-    {name:"World championship", location:"America", description:"Just a description", image:"../../assets/event_background.png"},
-    {name:"World championship", location:"America", description:"Just a description", image:"../../assets/event_background.png"}
+  events: CardContent[] = [
+    {
+      title: "World championship",
+      subTitle: "America",
+      description: "Just a description",
+      image: "../../assets/event_background.png"
+    },
+    {
+      title: "World championship",
+      subTitle: "America",
+      description: "Just a description",
+      image: "../../assets/event_background.png"
+    },
+    {
+      title: "World championship",
+      subTitle: "America",
+      description: "Just a description",
+      image: "../../assets/event_background.png"
+    },
+    {
+      title: "World championship",
+      subTitle: "America",
+      description: "Just a description",
+      image: "../../assets/event_background.png"
+    }
   ];
-  constructor(public dialog: MatDialog) {}
+
+  constructor(public dialog: MatDialog) {
+  }
 
   ngOnInit(): void {
   }

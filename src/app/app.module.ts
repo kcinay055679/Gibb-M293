@@ -19,6 +19,7 @@ import { AddEventComponent } from './add-event/add-event.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
+import {TacticsComponent} from "./tactics/tactics.component";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {MatInputModule} from "@angular/material/input";
     ArchivComponent,
     EventsComponent,
     FooterComponent,
-    AddEventComponent
+    AddEventComponent,
+    TacticsComponent
   ],
   imports: [
     BrowserModule,

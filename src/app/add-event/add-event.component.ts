@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validator, Validators} from "@angular/forms";
-import { ChessEvent } from '../models/ChessEvent';
+import { CardContent } from '../models/CardContent';
 import {MatDialogRef} from "@angular/material/dialog";
 
 @Component({
@@ -23,15 +23,15 @@ export class AddEventComponent implements OnInit {
     let value = {
       ...this.getDefaultEvent(),
       ...this.eventForm.value
-    } as ChessEvent;
+    } as CardContent;
     this.dialogRef.close(value)
   }
 
   getDefaultEvent(){
     return {
-      name:"",
-      location:"",
+      title:"",
+      subTitle:"",
       description:"",
-      image:"../../assets/event_background.png"} as ChessEvent
+      image:"../../assets/event_background.png"} as CardContent
   }
 }
