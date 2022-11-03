@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validator, Validators} from "@angular/forms";
+import {UntypedFormControl, UntypedFormGroup, Validator, Validators} from "@angular/forms";
 import { CardContent } from '../models/CardContent';
 import {MatDialogRef} from "@angular/material/dialog";
 
@@ -9,10 +9,10 @@ import {MatDialogRef} from "@angular/material/dialog";
   styleUrls: ['./add-event.component.scss']
 })
 export class AddEventComponent implements OnInit {
-  eventForm= new FormGroup({
-    name: new FormControl('',[Validators.required]),
-    location: new FormControl('', [Validators.required]),
-    description: new FormControl('',[Validators.required])
+  eventForm= new UntypedFormGroup({
+    name: new UntypedFormControl('',[Validators.required]),
+    location: new UntypedFormControl('', [Validators.required]),
+    description: new UntypedFormControl('',[Validators.required])
   });
   constructor(private dialogRef: MatDialogRef<AddEventComponent>) { }
 
